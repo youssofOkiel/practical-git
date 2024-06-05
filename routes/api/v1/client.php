@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('api/v1')->group(function () {
+Route::prefix('api/v1/client')->group(function () {
 
-    Route::get('/client', function () {
-        return "Hello from the API v1 client route!";
+    Route::get('/about', function () {
+        return "Hello from the API v1 About route!";
     });
 });
